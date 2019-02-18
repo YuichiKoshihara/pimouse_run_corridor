@@ -23,7 +23,7 @@ class WallStopAccelTest(unittest.TestCase):
 		left, right = self.set_and_get(40,0,0,9) #total: 49
 		self.assertTrue(0 < left == right < 1000 , "cant't move again")
 
-		tume.sleep(5.0)
+		time.sleep(5.0)
 		left, right = self.set_and_get(40,0,0,9) #total: 49
 		self.assertTrue(2000 < left == right, "cant't accerelate")
 
